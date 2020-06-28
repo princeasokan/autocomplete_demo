@@ -1,0 +1,14 @@
+<div class="search-wrapper">
+    <form>
+        
+        <input class="search" type="search" name="search" [(ngModel)]="search" placeholder="Search here"
+            (keyup)="getList($event)"
+            (search)="clearSearch($event)">
+    </form>
+    <div id="suggetions" *ngIf="suggetions.length>0">
+        <div id="content" *ngFor="let x of suggetions" >
+            <a class="item" href="#" (click)="selectSuggetion(x)"><span>{{x}}</span></a><a href="#" (click)="removeSuggetion(x)"><span class="close">X</span> </a>
+        </div>
+
+    </div>
+</div>

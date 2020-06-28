@@ -30,7 +30,8 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "preserveSymlinks": true
           },
           "configurations": {
             "production": {
@@ -123,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "autocompleteapp"
+    }
+  },
+  "defaultProject": "autocompleteapp",
+  "cli": {
+    "analytics": "dac58910-5854-4410-8b2e-3da667e45718"
+  }
 }
